@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		8528AA8B28FE8F90007D3CDF /* presApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8528AA8A28FE8F90007D3CDF /* presApp.swift */; };
-		8528AA8D28FE8F90007D3CDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8528AA8C28FE8F90007D3CDF /* ContentView.swift */; };
+		8528AA8D28FE8F90007D3CDF /* ContentViewA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8528AA8C28FE8F90007D3CDF /* ContentViewA.swift */; };
 		8528AA8F28FE8F91007D3CDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8528AA8E28FE8F91007D3CDF /* Assets.xcassets */; };
 		8528AA9228FE8F91007D3CDF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8528AA9128FE8F91007D3CDF /* Preview Assets.xcassets */; };
 		8528AA9C28FE8F91007D3CDF /* presTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8528AA9B28FE8F91007D3CDF /* presTests.swift */; };
 		8528AAA628FE8F91007D3CDF /* presUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8528AAA528FE8F91007D3CDF /* presUITests.swift */; };
 		8528AAA828FE8F91007D3CDF /* presUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8528AAA728FE8F91007D3CDF /* presUITestsLaunchTests.swift */; };
+		8528AAB628FEBA91007D3CDF /* ContentCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8528AAB528FEBA91007D3CDF /* ContentCore.swift */; };
+		85795A0E28FEBBA6008AA74F /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 85795A0D28FEBBA6008AA74F /* ComposableArchitecture */; };
+		85795A1128FEBC99008AA74F /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85795A1028FEBC99008AA74F /* Client.swift */; };
+		85795A1328FEC11A008AA74F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85795A1228FEC11A008AA74F /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,7 @@
 /* Begin PBXFileReference section */
 		8528AA8728FE8F90007D3CDF /* pres.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pres.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8528AA8A28FE8F90007D3CDF /* presApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = presApp.swift; sourceTree = "<group>"; };
-		8528AA8C28FE8F90007D3CDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8528AA8C28FE8F90007D3CDF /* ContentViewA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewA.swift; sourceTree = "<group>"; };
 		8528AA8E28FE8F91007D3CDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8528AA9128FE8F91007D3CDF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8528AA9728FE8F91007D3CDF /* presTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = presTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +48,9 @@
 		8528AAA128FE8F91007D3CDF /* presUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = presUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8528AAA528FE8F91007D3CDF /* presUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = presUITests.swift; sourceTree = "<group>"; };
 		8528AAA728FE8F91007D3CDF /* presUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = presUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8528AAB528FEBA91007D3CDF /* ContentCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCore.swift; sourceTree = "<group>"; };
+		85795A1028FEBC99008AA74F /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		85795A1228FEC11A008AA74F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85795A0E28FEBBA6008AA74F /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,8 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				8528AA8A28FE8F90007D3CDF /* presApp.swift */,
-				8528AA8C28FE8F90007D3CDF /* ContentView.swift */,
+				85795A0F28FEBC7A008AA74F /* ContentScreen */,
 				8528AA8E28FE8F91007D3CDF /* Assets.xcassets */,
+				8528AA8C28FE8F90007D3CDF /* ContentViewA.swift */,
 				8528AA9028FE8F91007D3CDF /* Preview Content */,
 			);
 			path = pres;
@@ -127,6 +136,16 @@
 			path = presUITests;
 			sourceTree = "<group>";
 		};
+		85795A0F28FEBC7A008AA74F /* ContentScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8528AAB528FEBA91007D3CDF /* ContentCore.swift */,
+				85795A1228FEC11A008AA74F /* ContentView.swift */,
+				85795A1028FEBC99008AA74F /* Client.swift */,
+			);
+			path = ContentScreen;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +162,9 @@
 			dependencies = (
 			);
 			name = pres;
+			packageProductDependencies = (
+				85795A0D28FEBBA6008AA74F /* ComposableArchitecture */,
+			);
 			productName = pres;
 			productReference = 8528AA8728FE8F90007D3CDF /* pres.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +237,9 @@
 				Base,
 			);
 			mainGroup = 8528AA7E28FE8F90007D3CDF;
+			packageReferences = (
+				85795A0C28FEBBA6008AA74F /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 8528AA8828FE8F90007D3CDF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,7 +282,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8528AA8D28FE8F90007D3CDF /* ContentView.swift in Sources */,
+				8528AAB628FEBA91007D3CDF /* ContentCore.swift in Sources */,
+				85795A1328FEC11A008AA74F /* ContentView.swift in Sources */,
+				8528AA8D28FE8F90007D3CDF /* ContentViewA.swift in Sources */,
+				85795A1128FEBC99008AA74F /* Client.swift in Sources */,
 				8528AA8B28FE8F90007D3CDF /* presApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -583,6 +611,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		85795A0C28FEBBA6008AA74F /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = exactVersion;
+				version = 0.40.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		85795A0D28FEBBA6008AA74F /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85795A0C28FEBBA6008AA74F /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8528AA7F28FE8F90007D3CDF /* Project object */;
 }
